@@ -77,7 +77,10 @@ export default function App() {
 
   useEffect(() => {
     csv("/data/mock.csv").then((data) => {
-      const dataResult = data.filter((data) => !data.colums);
+      const dataResult = data.filter((data) => !data.columns);
+
+      console.log(data)
+      console.log(dataResult)
 
       const dataComplete = dataResult.filter(
         (data) => data.quiz_completion === "complete"
