@@ -104,11 +104,18 @@ export default function App() {
   const filterStudyByCountry = (value) => {
     switch (value) {
       case "all":
+        //complete
         setStudy1CompleteFiltered(study1Complete.slice());
         setStudy2CompleteFiltered(study2Complete.slice());
         setStudy3CompleteFiltered(study3Complete.slice());
         setStudy4CompleteFiltered(study4Complete.slice());
         setStudy5CompleteFiltered(study5Complete.slice());
+        // incomplete
+        setStudy1IncompleteFiltered(study1Incomplete.slice());
+        setStudy2IncompleteFiltered(study2Incomplete.slice());
+        setStudy3IncompleteFiltered(study3Incomplete.slice());
+        setStudy4IncompleteFiltered(study4Incomplete.slice());
+        setStudy5IncompleteFiltered(study5Incomplete.slice());
         break;
 
       case "german":
